@@ -6,9 +6,12 @@ Wordle Solver is a useful script to help players gain an advantage at Wordle, th
 ![s](https://user-images.githubusercontent.com/98500513/151640054-3efcab10-f342-4d55-b146-5e8a0342dd92.png)
 
 Example 1, at Tester.kt
-green letters are N A L
-yellow letters are A N L
-Grey letters is U N I L Y
+
+Green letters are N A L
+
+Yellow letters are A N L
+
+Grey letters is U N I L O Y
 
 ```
     var green = listOf("", "", "n", "a", "l") //  is correct and in the correct position
@@ -16,7 +19,7 @@ Grey letters is U N I L Y
     var yellow2 = listOf("", "l", "", "", "")
     var yellow3 = listOf("", "", "", "", "")
 
-    var grey = "unioy"   //  it is not in the answer at all
+    var grey = "unioyl"   //  it is not in the answer at all
 ```
 Run it, You will get result 'banal'
 
