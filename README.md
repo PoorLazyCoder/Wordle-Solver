@@ -1,25 +1,49 @@
 # Wordle-Solver (Kotlin)
 Wordle Solver is a useful script to help players gain an advantage at Wordle, the new online word game catching on so fast on Twitter and Facebook. Use this Kotlin script to find the daily Wordle answer before your friends and show off your skills on social media.
 
+##
 # How to use
 
-![s](https://user-images.githubusercontent.com/98500513/151640054-3efcab10-f342-4d55-b146-5e8a0342dd92.png)
 
-Example 1, at Tester.kt
 
-Green letters are N A L
 
-Yellow letters are A N L
+Yellow letters are LOLL, Green letters are O D, Grey letter are GVEHTSI, Then you filter out 8 words only
 
-Grey letters is U N I L O Y
+![A1](https://user-images.githubusercontent.com/98500513/151674338-ce06de27-6a69-4498-9ff6-c2dc8024294c.png)
 
 ```
-    var green = listOf("", "", "n", "a", "l") //  is correct and in the correct position
-    var yellow1 = listOf("a", "n", "", "", "") // answer but not in the right position
+    var green =   listOf("", "o", "", "", "d") //  is correct and in the correct position
+    var yellow1 = listOf("", "l", "o", "", "l") // answer but not in the right position
     var yellow2 = listOf("", "l", "", "", "")
     var yellow3 = listOf("", "", "", "", "")
 
-    var grey = "unioyl"   //  it is not in the answer at all
-```
-Run it, You will get result 'banal'
+    var grey = "gvehtsi"   //  it is not in the answer at all
+``` 
+##
 
+Yellow letters are ANL, Green letters are NAL, Grey letter are UNIOLY, Then you filter out 7 words only
+
+![B1](https://user-images.githubusercontent.com/98500513/151674487-c5308e05-8e97-492e-8190-0101ad6bb105.png)
+
+```
+    var green =   listOf("",  "",  "n", "a", "l") //  is correct and in the correct position
+    var yellow1 = listOf("a", "n", "", "", "") // answer but not in the right position
+    var yellow2 = listOf("",  "l", "", "", "")
+    var yellow3 = listOf("", "", "", "", "")
+
+    var grey = "unioyl"   //  it is not in the answer at all
+``` 
+##
+
+Yellow letters are AU, Green letters are AUE, Grey letter are VMGS, Then you filter out 6 words only
+
+![C1](https://user-images.githubusercontent.com/98500513/151674574-f4c2800a-8087-434f-b0ca-072ba7812840.png)
+
+```
+    var green = listOf("a", "", "u", "", "e") //  is correct and in the correct position
+    var yellow1 = listOf("", "a", "", "u", "") // answer but not in the right position
+    var yellow2 = listOf("", "", "", "", "")
+    var yellow3 = listOf("", "", "", "", "")
+
+    var grey = "vmgs"   //  it is not in the answer at all
+``` 
