@@ -5,6 +5,20 @@ Wordle Solver is a useful script to help players gain an advantage at Wordle, th
 # How to use
 
 
+Yellow letters are O S, Green letters are O S E, Grey letter are W R D C L, Then you filter out one words only
+
+![D1](https://user-images.githubusercontent.com/98500513/152036230-0b9ace99-2b62-4c5c-81de-cdbd9afc5736.png)
+
+ 
+```
+    var green =   listOf("", "", "o", "s", "e") //  is correct and in the correct position
+    var yellow1 = listOf("", "o", "", "", "s") // answer but not in the right position
+    var yellow2 = listOf("", "", "", "", "")
+    var yellow3 = listOf("", "", "", "", "")
+
+    var grey = "wrdcl"   //  it is not in the answer at all
+``` 
+##
 
 
 Yellow letters are LOLL, Green letters are O D, Grey letter are GVEHTSI, Then you filter out 8 words only
